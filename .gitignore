@@ -4,3 +4,5 @@
 *.jar
 *.war
 *.ear
+/SAMS_JAVA_APP/nbproject/private/
+/SamsApp/nbproject/private/
