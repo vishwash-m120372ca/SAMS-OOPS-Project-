@@ -213,7 +213,8 @@ public class Expenses extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-         DoConnect();    
+        jLabel4.setText("");
+        DoConnect();    
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

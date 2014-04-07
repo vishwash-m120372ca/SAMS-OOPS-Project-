@@ -46,6 +46,7 @@ public class update extends javax.swing.JFrame {
         jRadioButton5 = new javax.swing.JRadioButton();
         jRadioButton6 = new javax.swing.JRadioButton();
         jRadioButton7 = new javax.swing.JRadioButton();
+        jRadioButton8 = new javax.swing.JRadioButton();
 
         setLocationByPlatform(true);
         setResizable(false);
@@ -86,6 +87,9 @@ public class update extends javax.swing.JFrame {
         buttonGroup1.add(jRadioButton7);
         jRadioButton7.setText("add expenses");
 
+        buttonGroup1.add(jRadioButton8);
+        jRadioButton8.setText("Submit Grade");
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -102,7 +106,8 @@ public class update extends javax.swing.JFrame {
                             .addComponent(jRadioButton1)
                             .addComponent(jRadioButton5)
                             .addComponent(jRadioButton6)
-                            .addComponent(jRadioButton7)))
+                            .addComponent(jRadioButton7)
+                            .addComponent(jRadioButton8)))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(31, 31, 31)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 318, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -126,7 +131,9 @@ public class update extends javax.swing.JFrame {
                 .addComponent(jRadioButton6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jRadioButton7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jRadioButton8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
         );
@@ -141,8 +148,8 @@ public class update extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(67, 67, 67))
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         setSize(new java.awt.Dimension(416, 362));
@@ -190,6 +197,12 @@ public class update extends javax.swing.JFrame {
         {
             Expenses expn = new Expenses();
             expn.setVisible(true);
+            setVisible(false);
+        }
+        if(jRadioButton8.isSelected())
+        {
+            Grade_entry grdentry = new Grade_entry();
+            grdentry.setVisible(true);
             setVisible(false);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -252,5 +265,6 @@ public class update extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton5;
     private javax.swing.JRadioButton jRadioButton6;
     private javax.swing.JRadioButton jRadioButton7;
+    private javax.swing.JRadioButton jRadioButton8;
     // End of variables declaration//GEN-END:variables
 }
